@@ -3,6 +3,9 @@ html, body{
     padding: 0;
     height: 100%;
 }
+h3{
+	color: #fff;
+}
 /*display on smaller screens*/
 @media screen and (max-height: 450px) {
 	.sidebar {padding-top: 450px;}
@@ -20,6 +23,9 @@ html, body{
 	margin-top: 10%;
 	border-radius: 10px;
 	display: block;
+}
+h3, a {
+	margin-left: 12%;
 }
 #main {
 	transition: margin-left .5s;
