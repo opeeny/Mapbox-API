@@ -78,6 +78,7 @@ function toggleSide() {
 	document.getElementById("panel").style.width = "250px";
 	document.getElementById("main").style.width = "250px";
 }
+
 function closeSide() {
 	//alert('...');
 	document.getElementById("panel").style.width = "0";
