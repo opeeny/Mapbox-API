@@ -36,41 +36,104 @@ map.on('load', function(){
     });
 });
 map.on('load', function(e) {
-	alert('what is this');
+	//alert('what is this');
 	mark();
 });
 function mark(){
-	alert('gus');
-var geojson = {
-    type: 'FeatureCollection',
-    features: [{
-      type: 'Feature',
-      geometry: {
-        type: 'Point',
-        coordinates: [0.3293, 32.5711]//Mak
-      },
-      properties: {
-        title: 'Mapbox',
-        description: 'Makerere University'
-      }
+  alert('gus');
+  var geojson = {
+    "type": "FeatureCollection",
+    "features": [
+    {
+    "type": "Feature",
+    "properties": {
+    "message": "Makerere University",
+    "iconSize": [35, 35]
+    },
+    "geometry": {
+    "type": "Point",
+    "coordinates": [32.5688886, 0.3292873]
+    }
     },
     {
-      type: 'Feature',
-      geometry: {
-        type: 'Point',
-        coordinates: [0.6119, 32.4759]
-      },
-      properties: {
-        title: 'Mapbox',
-        description: 'Ndejje University'
-      }
-    }]
-  };
-  var feature = features[0];
-  var popup = new mapboxgl.Popup({offset: [0, 0] })
-	  .setLngLat(feature.geometry.coordinates)
-	  .setHTML('<div class="marker"><h2>' + feature.properties.description + '</p></div>')
-	  .addTo(map);
+    "type": "Feature",
+    "properties": {
+    "message": "Ndejje University",
+    "iconSize": [25, 25]
+    },
+    "geometry": {
+    "type": "Point",
+    "coordinates": [32.473703, 0.6118754]
+    }
+    },
+    {
+    "type": "Feature",
+    "properties": {
+    "message": "MUBs",
+    "iconSize": [32, 32]
+    },
+    "geometry": {
+    "type": "Point",
+    "coordinates": [32.6149588, 0.3281222]
+    }
+    },
+    
+    {
+    "type": "Feature",
+    "properties": {
+    "message": "KIU",
+    "iconSize": [25, 25]
+    },
+    "geometry": {
+    "type": "Point",
+    "coordinates": [32.6028326, 0.2946565]
+    }
+    },
+    {
+    "type": "Feature",
+    "properties": {
+    "message": "Kyamboogo Univserity",
+    "iconSize": [30, 30]
+    },
+    "geometry": {
+    "type": "Point",
+    "coordinates": [32.6279459, 0.3520432]
+    }
+    }
+    ]
+    };
+     
+    var map = new mapboxgl.Map({
+    container: 'map',
+    style:  "mapbox://styles/mapbox/dark-v10",
+    center: [32.590362999999996, 0.31978989999999996],//starting position, Long, Lat,
+    zoom: 12
+    });
+     
+    // add markers to map
+    geojson.features.forEach(function(marker) {
+    // create a DOM element for the marker
+    var el = document.createElement('div');
+    el.className = 'marker';
+    el.style.backgroundImage = 'url(https://placekitten.com/g/' + marker.properties.iconSize.join('/') + '/)';
+    el.style.width = marker.properties.iconSize[0] + 'px';
+    el.style.height = marker.properties.iconSize[1] + 'px';
+     
+    el.addEventListener('click', function() {
+        alert(marker.properties.message);
+    });
+     
+    // add marker to map
+    new mapboxgl.Marker(el)
+    .setLngLat(marker.geometry.coordinates)
+    .addTo(map);
+    //add popup
+    new mapboxgl.Popup(el)
+    .setLngLat(marker.geometry.coordinates)
+    .setHTML('<div class="marker"><h2>' + marker.properties.message + '</p></div>')
+    .addTo(map);
+    });
+    
 }
 /*Toggle side panel*/
 function toggleSide() {
