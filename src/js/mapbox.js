@@ -127,7 +127,7 @@ function mark(){
     new mapboxgl.Marker(el)
     .setLngLat(marker.geometry.coordinates)
     .addTo(map);
-    //add popup
+    //add a popup
     new mapboxgl.Popup(el)
     .setLngLat(marker.geometry.coordinates)
     .setHTML('<div class="marker"><h2>' + marker.properties.message + '</p></div>')
