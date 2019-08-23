@@ -110,7 +110,7 @@ function mark(){
     });
      
     // add markers to map
-    geojson.features.forEach(function(marker) {
+    var geo = geojson.features.forEach(function(marker) {
     // create a DOM element for the marker
     var el = document.createElement('div');
     el.className = 'marker';
@@ -148,5 +148,21 @@ function closeSide() {
 }
 function markerere(){
   alert('Makerere');
-  closeSide();
+ 
+}
+function kyamboogo(){
+  alert('Kyambogo');
+  
+}
+function ndejje(){
+  alert('Ndejje');
+  
+}
+function mubs(){
+  alert('Kyambogo');
+  
+}
+function kiu(){
+  alert('KIU');
+  
 }
