@@ -83,16 +83,3 @@ function closeSide() {
 	document.getElementById("panel").style.width = "0";
 	document.getElementById("main").style.marginLeft = "0";
 }
-/* Add Markers */
-/*var markers = new mapboxgl.Marker()
-    .setLngLat(0.6119, 32.4759)
-    .addTo(map);*/
-/*geojson.features.forEach(function(marker){
-    //create HTML div element dynamically for each feature
-    var University = document.createElement('div');
-    University.className = 'marker';
-    //make a marker for feature and add to the map
-    var marker = new mapboxgl.Marker(University)
-    .setLngLat(marker.geometry.coordinates)
-    .addTo(map);
-})
