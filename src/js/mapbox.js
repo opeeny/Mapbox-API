@@ -40,7 +40,6 @@ map.on('load', function(e) {
 	mark();
 });
 function mark(){
-  alert('gus');
   var geojson = {
     "type": "FeatureCollection",
     "features": [
