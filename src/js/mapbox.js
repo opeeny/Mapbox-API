@@ -150,7 +150,7 @@ function markerere(){
   alert('Makerere');
  
 }
-function kyamboogo(){
+function kyambogo(){
   alert('Kyambogo');
   
 }
