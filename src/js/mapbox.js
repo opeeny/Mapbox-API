@@ -146,3 +146,7 @@ function closeSide() {
 	document.getElementById("panel").style.width = "0";
 	document.getElementById("main").style.marginLeft = "0";
 }
+function markerere(){
+  alert('Makerere');
+  closeSide();
+}
