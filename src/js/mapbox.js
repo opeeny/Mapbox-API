@@ -47,7 +47,7 @@ function mark(){
     "type": "Feature",
     "properties": {
     "message": "Makerere University",
-    "iconSize": [35, 35]
+    //"iconSize": [35, 35]
     },
     "geometry": {
     "type": "Point",
@@ -58,7 +58,7 @@ function mark(){
     "type": "Feature",
     "properties": {
     "message": "Ndejje University",
-    "iconSize": [25, 25]
+    //"iconSize": [25, 25]
     },
     "geometry": {
     "type": "Point",
@@ -81,7 +81,7 @@ function mark(){
     "type": "Feature",
     "properties": {
     "message": "KIU",
-    "iconSize": [25, 25]
+   // "iconSize": [25, 25]
     },
     "geometry": {
     "type": "Point",
@@ -114,23 +114,25 @@ function mark(){
     // create a DOM element for the marker
     var el = document.createElement('div');
     el.className = 'marker';
-    el.style.backgroundImage = 'url(https://placekitten.com/g/' + marker.properties.iconSize.join('/') + '/)';
+    /*el.style.backgroundImage = 'url(https://placekitten.com/g/' + marker.properties.iconSize.join('/') + '/)';
     el.style.width = marker.properties.iconSize[0] + 'px';
     el.style.height = marker.properties.iconSize[1] + 'px';
      
     el.addEventListener('click', function() {
         alert(marker.properties.message);
     });
-     
+     */
     // add marker to map
     new mapboxgl.Marker(el)
     .setLngLat(marker.geometry.coordinates)
+    .setPopup(new mapboxgl.Popup({offset: 25})
+    .setHTML("<p>" +marker.properties.message + "</p>"))
     .addTo(map);
     //add a popup
-    new mapboxgl.Popup(el)
+    /*new mapboxgl.Popup(el)
     .setLngLat(marker.geometry.coordinates)
     .setHTML('<div class="marker"><h2>' + marker.properties.message + '</p></div>')
-    .addTo(map);
+    .addTo(map);*/
     });
     
 }
