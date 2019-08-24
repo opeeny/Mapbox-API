@@ -20,18 +20,23 @@
             
             <div id = "panel" class="sidebar">
 				<a href = "javascript:void(0)" class = "fas fa-window-close closebtn" onclick = "closeSide()"></a>
-				<h3>My Universities</h3>
-				<input type = "text" id = "search" class = "filter" placeholder="Filter Locations"/><br>
-				<i class = "fas fa-graduation-cap"></i>
-				<a href = "javascript:void(0)" onclick="markerere()">Makerere</a>
-				<i class="fas fa-graduation-cap"></i>
-				<a href = "javascript:void(0)" onclick="kyambogo()">Kyambogo </a>
-				<i class="fas fa-graduation-cap"></i>
-				<a href = "javascript:void(0)" onclick="kiu()">KIU</a>
-				<i class="fas fa-graduation-cap"></i>
-				<a href = "javascript:void(0)" onclick="ndejje()">Ndejje</a>
-				<i class="fas fa-graduation-cap"></i>
-				<a href = "javascript:void(0)" onclick="mubs()">MUBS</a>
+                <h3>My Universities</h3>
+                <fieldset>
+                    <input type = "text" id = "search-filter" class = "filter" placeholder="Filter Locations"/><br>
+                </fieldset>
+                <div id = "search-listing" class="listing"></div>
+				<div>
+                    <i class = "fas fa-graduation-cap"></i>
+                    <a href = "javascript:void(0)" onclick="markerere()">Makerere</a>
+                    <i class="fas fa-graduation-cap"></i>
+                    <a href = "javascript:void(0)" onclick="kyambogo()">Kyambogo </a>
+                    <i class="fas fa-graduation-cap"></i>
+                    <a href = "javascript:void(0)" onclick="kiu()">KIU</a>
+                    <i class="fas fa-graduation-cap"></i>
+                    <a href = "javascript:void(0)" onclick="ndejje()">Ndejje</a>
+                    <i class="fas fa-graduation-cap"></i>
+                    <a href = "javascript:void(0)" onclick="mubs()">MUBS</a>
+                </div>
             </div>
 			<div id = "main">
 
