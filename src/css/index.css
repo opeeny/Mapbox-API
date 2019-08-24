@@ -99,7 +99,7 @@ input[type = text] {
 }
 .map-overlay fieldset {
 	display: none;
-	background: #ddd;
+	background:  green;
 	border: none;
 	padding: 10px;
 	margin: 0;
