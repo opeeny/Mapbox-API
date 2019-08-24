@@ -21,10 +21,12 @@
             <div id = "panel" class="sidebar">
 				<a href = "javascript:void(0)" class = "fas fa-window-close closebtn" onclick = "closeSide()"></a>
                 <h3>My Universities</h3>
-                <fieldset>
-                    <input type = "text" id = "search-filter" class = "filter" placeholder="Filter Locations"/><br>
-                </fieldset>
-                <div id = "search-listing" class="listing"></div>
+                <div class="map-overlay">
+                    <fieldset>
+                        <input type = "text" id = "search-filter" class = "filter" placeholder="Filter Locations"/><br>
+                    </fieldset>
+                    <div id = "search-listing" class="listing"></div>
+                 </div>
 				<div>
                     <i class = "fas fa-graduation-cap"></i>
                     <a href = "javascript:void(0)" onclick="markerere()">Makerere</a>
