@@ -86,6 +86,7 @@ input[type = text] {
     border-radius: 50%;
     cursor: pointer;
   }
+  /*
 .map-overlay {
 	position: absolute;
 	width: 25%;
@@ -132,3 +133,4 @@ input[type = text] {
 	.map-overlay .listing a:hover {
 		background: #000;
 	}
+	*/
