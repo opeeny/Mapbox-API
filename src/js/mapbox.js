@@ -236,6 +236,10 @@ function kyambogo(){
 }
 function ndejje(){
   alert('Ndejje');
+  var item = document.getElementById("ndejje");
+  item.addEventListener('click', function() {
+    alert('Ndejje agin');
+  });
   
 }
 function mubs(){
