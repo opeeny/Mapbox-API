@@ -194,7 +194,6 @@ function markerere() {
 function kyambogo(){
   var item = document.getElementById('kya');
   item.addEventListener('click', function() {
-    alert('xxxx');
     var geojson = {
       "type": "FeatureCollection",
       "features": [
