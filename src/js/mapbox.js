@@ -220,10 +220,8 @@ function kyambogo(){
   });  
 }
 function ndejje(){
-  alert('Ndejje');
   var item = document.getElementById('ndejje');
   item.addEventListener('click', function() {
-    alert('xxxx');
     var geojson = {
       "type": "FeatureCollection",
       "features": [
@@ -245,7 +243,7 @@ function ndejje(){
       container: 'map',
       style:  "mapbox://styles/mapbox/dark-v10",
       center: [32.590362999999996, 0.31978989999999996],//starting position, Long, Lat,
-      zoom: 9
+      zoom: 8
       });
       
       var geo = geojson.features.forEach(function(marker) {
