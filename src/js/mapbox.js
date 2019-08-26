@@ -148,12 +148,9 @@ function closeSide() {
 	document.getElementById("panel").style.width = "0";
 	document.getElementById("main").style.marginLeft = "0";
 }
-function markerere(){
-  alert('Makerere xx'); 
-  
+function markerere() {
   var item = document.getElementById('mak');
   item.addEventListener('click', function() {
-    alert('xMakerein listenre');
     var geojson = {
       "type": "FeatureCollection",
       "features": [
@@ -196,6 +193,47 @@ function markerere(){
 }//end mak
 function kyambogo(){
   alert('Kyambogo');
+  var item = document.getElementById('mak');
+  item.addEventListener('click', function() {
+    var geojson = {
+      "type": "FeatureCollection",
+      "features": [
+      {
+      "type": "Feature",
+      "properties": {
+      "message": "Kyambogo University",
+      "desc": "Kya",
+      "icon": "theatre"
+      },
+      "geometry": {
+      "type": "Point",
+      "coordinates": [32.6279459, 0.3520432]
+      }
+      },
+      ]
+      };
+      var map = new mapboxgl.Map({
+      container: 'map',
+      style:  "mapbox://styles/mapbox/dark-v10",
+      center: [32.590362999999996, 0.31978989999999996],//starting position, Long, Lat,
+      zoom: 13
+      });
+      
+        var geo = geojson.features.forEach(function(marker) {
+          // create a DOM element for the marker
+          var el = document.createElement('div');
+          el.className = 'kya';
+      
+          // add marker to map
+          new mapboxgl.Marker(el)
+          .setLngLat(marker.geometry.coordinates)
+          .setPopup(new mapboxgl.Popup({offset: 25})
+          .setHTML("<p>" +marker.properties.message + "</p>"))
+          .addTo(map);
+          });  
+
+  });
+
   
 }
 function ndejje(){
