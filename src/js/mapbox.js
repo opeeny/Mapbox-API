@@ -150,6 +150,7 @@ function closeSide() {
 }
 function markerere(){
   alert('Makerere xx'); 
+  
   var item = document.getElementById('mak');
   item.addEventListener('click', function() {
     alert('xMakerein listenre');
@@ -174,21 +175,21 @@ function markerere(){
       container: 'map',
       style:  "mapbox://styles/mapbox/dark-v10",
       center: [32.590362999999996, 0.31978989999999996],//starting position, Long, Lat,
-      zoom: 18
+      zoom: 13
       });
       
-      var geo = geojson.features.forEach(function(marker) {
-        // create a DOM element for the marker
-        var el = document.createElement('div');
-        el.className = 'mak';
-    
-        // add marker to map
-        new mapboxgl.Marker(el)
-        .setLngLat(marker.geometry.coordinates)
-        .setPopup(new mapboxgl.Popup({offset: 25})
-        .setHTML("<p>" +marker.properties.message + "</p>"))
-        .addTo(map);
-        });  
+        var geo = geojson.features.forEach(function(marker) {
+          // create a DOM element for the marker
+          var el = document.createElement('div');
+          el.className = 'mak';
+      
+          // add marker to map
+          new mapboxgl.Marker(el)
+          .setLngLat(marker.geometry.coordinates)
+          .setPopup(new mapboxgl.Popup({offset: 25})
+          .setHTML("<p>" +marker.properties.message + "</p>"))
+          .addTo(map);
+          });  
 
   });
 
