@@ -357,11 +357,9 @@ function filterLocation(){
     txtValue = a.textContent || a.innerText;
     if(txtValue.toUpperCase().indexOf(filter) > -1) {
       li[i].style.display = "";
-      alert('in empty');
     }
     else {
       li[i].style.display = 'none';
-      alert('in none');
     }
   }
   filter.addEventListener('keyup', function() {
