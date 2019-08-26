@@ -215,7 +215,7 @@ function kyambogo(){
       container: 'map',
       style:  "mapbox://styles/mapbox/dark-v10",
       center: [32.590362999999996, 0.31978989999999996],//starting position, Long, Lat,
-      zoom: 13
+      zoom: 9
       });
       
         var geo = geojson.features.forEach(function(marker) {
