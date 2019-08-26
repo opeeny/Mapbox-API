@@ -192,7 +192,6 @@ function markerere() {
 
 }//end mak
 function kyambogo(){
-  alert('Kyambogoxx');
   var item = document.getElementById('kya');
   item.addEventListener('click', function() {
     alert('xxxx');
@@ -236,17 +235,132 @@ function kyambogo(){
 }
 function ndejje(){
   alert('Ndejje');
-  var item = document.getElementById("ndejje");
+  var item = document.getElementById('ndejje');
   item.addEventListener('click', function() {
-    alert('Ndejje agin');
-  });
-  
+    alert('xxxx');
+    var geojson = {
+      "type": "FeatureCollection",
+      "features": [
+      {
+      "type": "Feature",
+      "properties": {
+      "message": "Kyambogo University",
+      "desc": "Kya",
+      "icon": "theatre"
+      },
+      "geometry": {
+      "type": "Point",
+      "coordinates": [32.473703, 0.6118754]
+      }
+      },
+      ]
+      };
+      var map = new mapboxgl.Map({
+      container: 'map',
+      style:  "mapbox://styles/mapbox/dark-v10",
+      center: [32.590362999999996, 0.31978989999999996],//starting position, Long, Lat,
+      zoom: 13
+      });
+      
+      var geo = geojson.features.forEach(function(marker) {
+        // create a DOM element for the marker
+        var el = document.createElement('div');
+        el.className = 'ndejje';
+    
+        // add marker to map
+        new mapboxgl.Marker(el)
+        .setLngLat(marker.geometry.coordinates)
+        .setPopup(new mapboxgl.Popup({offset: 25})
+        .setHTML("<p>" + marker.properties.message + "</p>"))
+        .addTo(map);
+        });  
+});  
 }
 function mubs(){
-  alert('Kyambogo');
+  alert('muns');
+  var item = document.getElementById('mubs');
+  item.addEventListener('click', function() {
+    alert('xxxx');
+    var geojson = {
+      "type": "FeatureCollection",
+      "features": [
+      {
+      "type": "Feature",
+      "properties": {
+      "message": "MUBs University",
+      "desc": "Kya",
+      "icon": "theatre"
+      },
+      "geometry": {
+      "type": "Point",
+      "coordinates": [32.6149588, 0.3281222]
+      }
+      },
+      ]
+      };
+      var map = new mapboxgl.Map({
+      container: 'map',
+      style:  "mapbox://styles/mapbox/dark-v10",
+      center: [32.590362999999996, 0.31978989999999996],//starting position, Long, Lat,
+      zoom: 13
+      });
+      
+        var geo = geojson.features.forEach(function(marker) {
+          // create a DOM element for the marker
+          var el = document.createElement('div');
+          el.className = 'mubs';
+      
+          // add marker to map
+          new mapboxgl.Marker(el)
+          .setLngLat(marker.geometry.coordinates)
+          .setPopup(new mapboxgl.Popup({offset: 25})
+          .setHTML("<p>" + marker.properties.message + "</p>"))
+          .addTo(map);
+          });  
+  });  
   
 }
 function kiu(){
   alert('KIU');
+  var item = document.getElementById('kiu');
+  item.addEventListener('click', function() {
+    alert('kiu xxxx');
+    var geojson = {
+      "type": "FeatureCollection",
+      "features": [
+      {
+      "type": "Feature",
+      "properties": {
+      "message": "KIU",
+      "desc": "KIU",
+      "icon": "theatre"
+      },
+      "geometry": {
+      "type": "Point",
+      "coordinates": [32.6279459, 0.3520432]
+      }
+      },
+      ]
+      };
+      var map = new mapboxgl.Map({
+      container: 'map',
+      style:  "mapbox://styles/mapbox/dark-v10",
+      center: [32.590362999999996, 0.31978989999999996],//starting position, Long, Lat,
+      zoom: 13
+      });
+      
+        var geo = geojson.features.forEach(function(marker) {
+          // create a DOM element for the marker
+          var el = document.createElement('div');
+          el.className = 'kiu';
+      
+          // add marker to map
+          new mapboxgl.Marker(el)
+          .setLngLat(marker.geometry.coordinates)
+          .setPopup(new mapboxgl.Popup({offset: 25})
+          .setHTML("<p>" + marker.properties.message + "</p>"))
+          .addTo(map);
+          });  
+  });  
   
 }
