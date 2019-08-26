@@ -86,51 +86,13 @@ input[type = text] {
     border-radius: 50%;
     cursor: pointer;
   }
-  /*
-.map-overlay {
-	position: absolute;
-	width: 25%;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
-	background-color: #000;
-	max-height: 100%;
-	overflow: hidden
-}
-.map-overlay fieldset {
-	display: none;
-	background:  green;
-	border: none;
-	padding: 10px;
-	margin: 0;
-	}
-	.map-overlay input {
-		display: block;
-		border: none;
-		width: 100%;
-		border-radius: 3px;
-		padding: 10px;
-		margin: 0;
-		}
-	.map-overlay .listing {
-		overflow: auto;
-		max-height: 100%;
-	}
-	.map-overlay .listing > * {
-		display: block;
-		padding: 5px 10px;
-		margin: 0;
-	}
-	.map-overlay .listing a {
-		border-bottom: 1px solid rgb(0, 0, 0, 0.1);
-		color: #404;
-		text-decoration: none;
-	}
-	.map-overlay .listing a:last-child {
-		border: none;
-	}
-	.map-overlay .listing a:hover {
-		background: #000;
-	}
-	*/
+.mak {
+    background-image: url('max.jpg');
+    background-size: cover;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  
