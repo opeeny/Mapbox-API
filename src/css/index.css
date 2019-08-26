@@ -96,29 +96,29 @@ input[type = text] {
   }
 .kya {
 	background-image: url('kya.jpg');
-	width: 48px;
-	height: 48px;
+	width: 85px;
+	height: 70px;
 	border-radius: 50%;
 	cursor: pointer;
 }
 .mubs {
 	background-image: url('mubs.png');
-	width: 50px;
-	height: 50px;
+	width: 85px;
+	height: 75px;
 	border-radius: 50%;
 	cursor: pointer;
 }
 .kiu {
 	background-image: url('kiu.jpg');
-	width: 50px;
-	height: 50px;
+	width: 80px;
+	height: 75px;
 	border-radius: 50%;
 	cursor: pointer;
 }
 .ndejje {
 	background-image: url('ndejje.jpg');
-	width: 50px;
-	height: 50px;
+	width: 80px;
+	height: 80px;
 	border-radius: 50%;
 	cursor: pointer;
 }
