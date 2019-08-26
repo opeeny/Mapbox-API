@@ -192,7 +192,7 @@ function markerere() {
 
 }//end mak
 function kyambogo(){
-  alert('Kyambogo');
+  alert('Kyambogoxx');
   var item = document.getElementById('mak');
   item.addEventListener('click', function() {
     var geojson = {
