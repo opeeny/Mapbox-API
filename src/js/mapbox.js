@@ -244,7 +244,7 @@ function ndejje(){
       {
       "type": "Feature",
       "properties": {
-      "message": "Kyambogo University",
+      "message": "Ndejje University",
       "desc": "Kya",
       "icon": "theatre"
       },
@@ -331,7 +331,7 @@ function kiu(){
       {
       "type": "Feature",
       "properties": {
-      "message": "KIU",
+      "message": "Kampala Internation University",
       "desc": "KIU",
       "icon": "theatre"
       },
