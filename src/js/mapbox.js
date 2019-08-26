@@ -347,7 +347,7 @@ function kiu(){
 
 function filterLocation(){
   var item = document.getElementById("filter");
-  item.addEventListener('click', function() {
+  item.addEventListener('keyup', function() {
     alert('your filter');
   });
 }
