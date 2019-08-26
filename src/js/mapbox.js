@@ -195,6 +195,7 @@ function kyambogo(){
   alert('Kyambogoxx');
   var item = document.getElementById('mak');
   item.addEventListener('click', function() {
+    alert('xxxx');
     var geojson = {
       "type": "FeatureCollection",
       "features": [
@@ -231,10 +232,7 @@ function kyambogo(){
           .setHTML("<p>" + marker.properties.message + "</p>"))
           .addTo(map);
           });  
-
-  });
-
-  
+  });  
 }
 function ndejje(){
   alert('Ndejje');
