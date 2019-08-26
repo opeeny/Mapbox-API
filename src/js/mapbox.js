@@ -343,4 +343,11 @@ function kiu(){
           });  
   });  
   
+}//end kiu
+
+function filterLocation(){
+  var item = document.getElementById("filter");
+  item.addEventListener('click', function() {
+    alert('your filter');
+  });
 }
