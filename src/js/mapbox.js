@@ -228,8 +228,8 @@ function ndejje(){
       {
       "type": "Feature",
       "properties": {
-      "message": "Ndejje University",
-      "desc": "Kya",
+      "message": "Ndejje",
+      "desc": "Ndejje University",
       "icon": "theatre"
       },
       "geometry": {
@@ -255,7 +255,7 @@ function ndejje(){
         new mapboxgl.Marker(el)
         .setLngLat(marker.geometry.coordinates)
         .setPopup(new mapboxgl.Popup({offset: 25})
-        .setHTML("<p>" + marker.properties.message + "</p>"))
+        .setHTML("<p>" + marker.properties.desc + "</p>"))
         .addTo(map);
         });  
 });  
