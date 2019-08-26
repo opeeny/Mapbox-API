@@ -258,7 +258,7 @@ function ndejje(){
       container: 'map',
       style:  "mapbox://styles/mapbox/dark-v10",
       center: [32.590362999999996, 0.31978989999999996],//starting position, Long, Lat,
-      zoom: 13
+      zoom: 9
       });
       
       var geo = geojson.features.forEach(function(marker) {
@@ -276,10 +276,8 @@ function ndejje(){
 });  
 }
 function mubs(){
-  alert('muns');
   var item = document.getElementById('mubs');
   item.addEventListener('click', function() {
-    alert('xxxx');
     var geojson = {
       "type": "FeatureCollection",
       "features": [
@@ -301,7 +299,7 @@ function mubs(){
       container: 'map',
       style:  "mapbox://styles/mapbox/dark-v10",
       center: [32.590362999999996, 0.31978989999999996],//starting position, Long, Lat,
-      zoom: 13
+      zoom: 10
       });
       
         var geo = geojson.features.forEach(function(marker) {
@@ -320,10 +318,8 @@ function mubs(){
   
 }
 function kiu(){
-  alert('KIU');
   var item = document.getElementById('kiu');
   item.addEventListener('click', function() {
-    alert('kiu xxxx');
     var geojson = {
       "type": "FeatureCollection",
       "features": [
@@ -345,7 +341,7 @@ function kiu(){
       container: 'map',
       style:  "mapbox://styles/mapbox/dark-v10",
       center: [32.590362999999996, 0.31978989999999996],//starting position, Long, Lat,
-      zoom: 13
+      zoom: 10
       });
       
         var geo = geojson.features.forEach(function(marker) {
