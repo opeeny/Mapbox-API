@@ -362,8 +362,4 @@ function filterLocation(){
       li[i].style.display = 'none';
     }
   }
-  filter.addEventListener('keyup', function() {
-    alert('your filter');
-
-  });
 }
