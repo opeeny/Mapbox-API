@@ -184,7 +184,7 @@ function markerere() {
           new mapboxgl.Marker(el)
           .setLngLat(marker.geometry.coordinates)
           .setPopup(new mapboxgl.Popup({offset: 25})
-          .setHTML("<p>" +marker.properties.message + "</p>"))
+          .setHTML("<p>" + marker.properties.message + "</p>"))
           .addTo(map);
           });  
 
@@ -228,7 +228,7 @@ function kyambogo(){
           new mapboxgl.Marker(el)
           .setLngLat(marker.geometry.coordinates)
           .setPopup(new mapboxgl.Popup({offset: 25})
-          .setHTML("<p>" +marker.properties.message + "</p>"))
+          .setHTML("<p>" + marker.properties.message + "</p>"))
           .addTo(map);
           });  
 
