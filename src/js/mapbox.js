@@ -346,8 +346,26 @@ function kiu(){
 }//end kiu
 
 function filterLocation(){
-  var item = document.getElementById("filter");
-  item.addEventListener('keyup', function() {
+  var input, filter, ul, a, i, txtValue;
+  input = document.getElementById("filter");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById('myUL');
+  li = ul.getElementsByTagName('li');
+  /* Loop thru. all list items, hide those that dont match*/
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName('a')[0];
+    txtValue = a.textContent || a.innerText;
+    if(txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+      alert('in empty');
+    }
+    else {
+      li[i].style.display = 'none';
+      alert('in none');
+    }
+  }
+  filter.addEventListener('keyup', function() {
     alert('your filter');
+
   });
 }
