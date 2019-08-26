@@ -94,5 +94,11 @@ input[type = text] {
     border-radius: 50%;
     cursor: pointer;
   }
-
+.kya {
+	background-image: url('kya.png');
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	cursor: pointer;
+}
   
